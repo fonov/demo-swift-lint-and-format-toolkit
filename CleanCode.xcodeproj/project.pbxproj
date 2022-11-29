@@ -10,10 +10,11 @@
 		A650E6C329363F8500F9627A /* CleanCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6C229363F8500F9627A /* CleanCodeApp.swift */; };
 		A650E6C529363F8500F9627A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6C429363F8500F9627A /* ContentView.swift */; };
 		A650E6C729363F8700F9627A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A650E6C629363F8700F9627A /* Assets.xcassets */; };
-		A650E6CA29363F8700F9627A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A650E6C929363F8700F9627A /* Preview Assets.xcassets */; };
 		A650E6D429363F8700F9627A /* CleanCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6D329363F8700F9627A /* CleanCodeTests.swift */; };
 		A650E6DE29363F8700F9627A /* CleanCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6DD29363F8700F9627A /* CleanCodeUITests.swift */; };
 		A650E6E029363F8700F9627A /* CleanCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6DF29363F8700F9627A /* CleanCodeUITestsLaunchTests.swift */; };
+		A650E6F1293643A500F9627A /* SwiftLintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6F0293643A500F9627A /* SwiftLintDemo.swift */; };
+		A650E6F4293646DE00F9627A /* SwiftFormatDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650E6F3293646DE00F9627A /* SwiftFormatDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +39,13 @@
 		A650E6C229363F8500F9627A /* CleanCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeApp.swift; sourceTree = "<group>"; };
 		A650E6C429363F8500F9627A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A650E6C629363F8700F9627A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A650E6C929363F8700F9627A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A650E6CF29363F8700F9627A /* CleanCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A650E6D329363F8700F9627A /* CleanCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeTests.swift; sourceTree = "<group>"; };
 		A650E6D929363F8700F9627A /* CleanCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A650E6DD29363F8700F9627A /* CleanCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITests.swift; sourceTree = "<group>"; };
 		A650E6DF29363F8700F9627A /* CleanCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A650E6F0293643A500F9627A /* SwiftLintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintDemo.swift; sourceTree = "<group>"; };
+		A650E6F3293646DE00F9627A /* SwiftFormatDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFormatDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +96,14 @@
 		A650E6C129363F8500F9627A /* CleanCode */ = {
 			isa = PBXGroup;
 			children = (
+				A650E6F2293643CB00F9627A /* Preview Content */,
+				A650E6F0293643A500F9627A /* SwiftLintDemo.swift */,
 				A650E6C229363F8500F9627A /* CleanCodeApp.swift */,
 				A650E6C429363F8500F9627A /* ContentView.swift */,
 				A650E6C629363F8700F9627A /* Assets.xcassets */,
-				A650E6C829363F8700F9627A /* Preview Content */,
+				A650E6F3293646DE00F9627A /* SwiftFormatDemo.swift */,
 			);
 			path = CleanCode;
-			sourceTree = "<group>";
-		};
-		A650E6C829363F8700F9627A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A650E6C929363F8700F9627A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A650E6D229363F8700F9627A /* CleanCodeTests */ = {
@@ -125,6 +121,13 @@
 				A650E6DF29363F8700F9627A /* CleanCodeUITestsLaunchTests.swift */,
 			);
 			path = CleanCodeUITests;
+			sourceTree = "<group>";
+		};
+		A650E6F2293643CB00F9627A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +160,6 @@
 				A650E6CB29363F8700F9627A /* Sources */,
 				A650E6CC29363F8700F9627A /* Frameworks */,
 				A650E6CD29363F8700F9627A /* Resources */,
-				A650E6EF2936400600F9627A /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -235,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A650E6CA29363F8700F9627A /* Preview Assets.xcassets in Resources */,
 				A650E6C729363F8700F9627A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,24 +311,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n    swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
-		A650E6EF2936400600F9627A /* SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftFormat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,6 +320,8 @@
 			files = (
 				A650E6C529363F8500F9627A /* ContentView.swift in Sources */,
 				A650E6C329363F8500F9627A /* CleanCodeApp.swift in Sources */,
+				A650E6F1293643A500F9627A /* SwiftLintDemo.swift in Sources */,
+				A650E6F4293646DE00F9627A /* SwiftFormatDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
