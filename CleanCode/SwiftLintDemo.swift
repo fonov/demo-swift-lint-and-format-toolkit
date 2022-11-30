@@ -50,6 +50,6 @@ var numbers: Array<Int> = []
 
 var number: Int? = nil
 
-// Type Name Violation: Type name should start with an uppercase character: 'mySuperClass' (type_name)
+// 
 
 class mySuperClass {}

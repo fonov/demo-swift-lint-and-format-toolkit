@@ -137,9 +137,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A650E6E329363F8700F9627A /* Build configuration list for PBXNativeTarget "CleanCode" */;
 			buildPhases = (
-				A650E6BB29363F8500F9627A /* Sources */,
 				A650E6EE29363FDA00F9627A /* SwiftLint */,
 				A650E6EC29363F9C00F9627A /* SwiftFormat (lint only) */,
+				A650E6BB29363F8500F9627A /* Sources */,
 				A650E6BC29363F8500F9627A /* Frameworks */,
 				A650E6BD29363F8500F9627A /* Resources */,
 				A650E6ED29363FC700F9627A /* ShellScript */,
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n    swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif [ ! -f ~/com.raywenderlich.swiftlint.yml ]; then\n  echo \"warning: can't found config file ~/com.raywenderlich.swiftlint.yml\"\n  exit 0\nfi\nif which swiftlint > /dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
